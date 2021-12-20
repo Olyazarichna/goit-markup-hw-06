@@ -479,17 +479,20 @@ img {
   border-radius: 4px;
   background-color: var(--primary-color);
   background-origin: border-box;
+  padding-left: 16px;
+  caret-color: #ffffff;
+  color: #ffffff;
+}
+.footer-email:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 .footer-email::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-left: 16px;
 }
-/* .footer-email:focus {
-  border: 1px solid #2196f3;
-} */
 
 .footer-signup {
   display: inline-flex;
