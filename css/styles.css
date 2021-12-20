@@ -4,6 +4,7 @@
   --bg-second-color: #f5f4fa;
   --accent-color: #2196f3;
   --primary-text-color: #212121;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   color: var(--primary-text-color);
@@ -89,7 +90,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
 }
 
 /* общей клас с контактами в header  */
@@ -99,7 +100,6 @@ img {
 .nav-list:hover,
 .nav-list:focus {
   color: var(--accent-color);
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .active .btn.current {
   color: var(--accent-color);
@@ -189,8 +189,7 @@ img {
   letter-spacing: 0.06em;
   border: 0;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), box-shadow var(--transition);
 }
 
 .offer:hover,
@@ -337,23 +336,21 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition);
 }
 .social-links {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 }
 .team-social:hover,
 .team-social:focus {
   background-color: var(--accent-color);
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .team-social:hover .social-links,
 .team-social:focus .social-links {
   fill: #ffffff;
-  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /* Постоянные клиенты */
@@ -381,14 +378,14 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition);
 }
 /* client logo-icon */
 .client-icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 }
 .client-hover:hover,
 .client-hover:focus {
@@ -487,8 +484,8 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), color var(--transition),
+    box-shadow var(--transition);
 }
 .list-btn:hover,
 .list-btn:focus {
@@ -520,7 +517,7 @@ img {
 .element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition);
 }
 .features {
   border-bottom: 1px solid #ececec;
@@ -553,7 +550,7 @@ img {
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 .element:hover .element-overlay {
   transform: translateY(-100%);
@@ -577,7 +574,7 @@ img {
   background: rgba(0, 0, 0, 0.2);
   visibility: visible;
   opacity: 1;
-  transition: opacity 2s, visibility 2s;
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .is-hidden {
@@ -596,7 +593,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  animation: open 2s alternate;
+  /* animation: open 2s alternate; */
 }
 
 .modal-close {
@@ -618,11 +615,11 @@ img {
   display: inline-flex;
 }
 
-@keyframes open {
+/* @keyframes open {
   0% {
     left: 0;
   }
   100% {
     left: 50%;
   }
-}
+} */
