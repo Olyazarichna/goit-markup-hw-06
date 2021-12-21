@@ -811,12 +811,3 @@ img {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-/* @keyframes open {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 50%;
-  }
-} */
