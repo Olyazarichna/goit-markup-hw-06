@@ -679,10 +679,11 @@ img {
 .close-icon {
   display: inline-flex;
 }
-.close-icon:hover,
-.close-icon:focus {
+.modal-close:hover .close-icon,
+.modal-close:focus .close-icon {
   fill: var(--accent-color);
 }
+
 /* форма модального вікна */
 .form-text {
   font-size: 20px;
@@ -709,7 +710,6 @@ img {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  /* box-sizing: border-box; */
   transition: border-color var(--transition);
 }
 .form-field {
