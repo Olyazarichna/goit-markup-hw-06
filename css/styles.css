@@ -520,24 +520,6 @@ img {
 
 /* Portfolio */
 
-.headline {
-  margin-bottom: 4px;
-  color: var(--primary-text-color);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-}
-.headline-text {
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.87;
-}
-.element {
-  display: block;
-  text-decoration: none;
-}
-
 /* Button portfolio */
 
 .btn {
@@ -558,9 +540,6 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-/* блок работы */
-
 .filtr {
   display: flex;
   justify-content: center;
@@ -576,7 +555,24 @@ img {
   border: transparent;
   border-radius: 4px;
 }
-
+/* блок работы */
+.headline {
+  margin-bottom: 4px;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+}
+.headline-text {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+}
+.element {
+  display: block;
+  text-decoration: none;
+}
 .element:hover,
 .element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
